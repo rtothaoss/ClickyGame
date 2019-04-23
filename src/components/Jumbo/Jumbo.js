@@ -10,7 +10,7 @@ class Jumbo extends Component {
     <h1 className="display-4 text-center">Star Wars Themed Memory Game</h1>
     <p className="lead text-center">Click on an image to earn points, but don't click on any more than once!</p>
   </div>
-  <p className="text-center scoreText">Score={this.props.score}</p>
+  <p className="text-center scoreText">Score:{this.props.score}</p>
 </div>
 </div>
         )

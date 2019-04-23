@@ -54,3 +54,8 @@
   body {
     background-color: black
   }
+
+  .card-img-top:hover {
+    /* opacity: 0.8; */
+    border: 5px solid white;
+  }

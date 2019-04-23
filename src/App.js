@@ -4,6 +4,7 @@ import characters from './characters.json'
 import Jumbo from './components/Jumbo/Jumbo'
 
 
+
 class App extends Component {
 
   state = {
@@ -12,6 +13,8 @@ class App extends Component {
     score: 0
 
   };
+
+
 
   imageClick = event => {
     const chosenCharacter = event.target.alt
@@ -25,14 +28,23 @@ class App extends Component {
         charactersPicked: [],
         score: 0
       });
-      alert('You suck try again!')
+      alert('You lose! Try again!')
+      
   } else {
     
     this.setState({
       characters: this.state.characters.sort((a,b) => 0.5 - Math.random()),
       score: this.state.score + 1,
       charactersPicked: this.state.charactersPicked.concat(chosenCharacter)
-  
+    },() => {
+      if (this.state.score === 12) {
+        alert("Yay! You Win!");
+        this.setState({
+          characters: this.state.characters.sort((a,b) => 0.5 - Math.random()),
+          charactersPicked: [],
+          score: 0
+        });
+      }
     })
   }
 }
@@ -59,5 +71,7 @@ class App extends Component {
       )
     }
 }
+
+
 
 export default App;
