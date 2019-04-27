@@ -20,7 +20,7 @@ class App extends Component {
     const chosenCharacter = event.target.alt
     const characterAlreadyPicked =
       this.state.charactersPicked.indexOf(chosenCharacter) > -1;
-      console.log(chosenCharacter)
+    
 
     if(characterAlreadyPicked) {
       this.setState({
