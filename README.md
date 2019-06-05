@@ -1,6 +1,8 @@
 # Star Wars Memory Game
 *A webpage that makes use of React's state for a memory game.*
 
+![alt text](https://i.imgur.com/pSpvlZg.jpg 'star wars game')
+
 Deployed Page: https://rtothaoss.github.io/ClickyGame/
 
 
